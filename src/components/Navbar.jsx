@@ -9,7 +9,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="bg-white w-[90%] md:w-[70%] lg:w-[50%] md:gap-5 rounded-3xl mx-auto flex flex-row justify-center mt-5 gap-3 p-3">
+    <div className="bg-white w-[90%] md:w-[70%] lg:w-[50%] md:gap-4 rounded-3xl mx-auto flex flex-row justify-center mt-5 gap-3 p-3">
       {headers.map((header) => {
         return (
           <div className="text-xs sm:text-lg md:text-xl transition-transform duration-200 hover:scale-110">
