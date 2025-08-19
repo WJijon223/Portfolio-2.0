@@ -25,20 +25,25 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="w-[75%] h-[500px] rounded-2xl p-4 mt-8 mx-auto bg-slate-400 flex flex-col items-center justify-center">
-      <h1 className="text-white text-xl mb-4">Hi, I'm William</h1>
+    <div className="w-[85%] md:w-[750px] h-[500px] md:h-[700px] rounded-2xl p-4 md:p-8 mt-8 mx-auto bg-slate-400 flex flex-col items-center justify-center">
+      <h1 className="text-white text-xl md:text-4xl mb-4 md:mb-8">
+        Hi, I'm William
+      </h1>
       <img
         src={heroImage}
         alt="Profile"
-        className="w-56 h-64 object-cover rounded-2xl mb-4"
+        className="w-56 h-64 md:w-80 md:h-96 object-cover rounded-2xl mb-4 md:mb-8"
       />
-      <span className="mx-auto mb-6" ref={el}></span>
-      <div className="flex flex-row items-center gap-4">
+      <span
+        className="mx-auto mb-6 md:mb-10 text-center text-lg md:text-2xl"
+        ref={el}
+      ></span>
+      <div className="flex flex-row items-center gap-4 md:gap-8">
         <a
           href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white hover:bg-blue-700 text-slate-400 px-4 py-2 rounded-lg transition-colors"
+          className="bg-white hover:opacity-80 transition-opacity text-slate-400 px-4 py-2 md:px-6 md:py-3 rounded-lg transition-colors text-sm md:text-lg"
         >
           Resume
         </a>
@@ -49,7 +54,7 @@ export default function Hero() {
           className="hover:opacity-80 transition-opacity"
         >
           <svg
-            className="w-8 h-8 fill-white"
+            className="w-8 h-8 md:w-12 md:h-12 fill-white"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -63,7 +68,7 @@ export default function Hero() {
           className="hover:opacity-80 transition-opacity"
         >
           <svg
-            className="w-8 h-8 fill-white"
+            className="w-8 h-8 md:w-12 md:h-12 fill-white"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
