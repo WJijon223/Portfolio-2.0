@@ -24,30 +24,30 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="w-full px-4 py-8 mx-auto min-h-screen flex items-center">
-      <div className="w-full max-w-md mx-auto bg-slate-400 rounded-2xl shadow-lg py-36 px-6 space-y-12">
+    <section className="w-full px-4 pb-8 -mt-8 mx-auto min-h-screen flex items-center">
+      <div className="w-full max-w-md md:max-w-2xl lg:max-w-4xl mx-auto bg-slate-400 rounded-2xl shadow-lg py-36 px-6 md:px-12 lg:px-16 space-y-12">
         <div className="flex justify-center mb-4">
           <img
             src={heroImage}
             alt="Profile"
-            className="w-48 h-56 rounded-lg object-cover shadow-md"
+            className="w-48 h-56 md:w-56 md:h-64 lg:w-64 lg:h-72 rounded-lg object-cover shadow-md"
           />
         </div>
-        <h1 className="text-white text-2xl font-bold text-center mb-4">
+        <h1 className="text-white text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-4">
           Hi, I'm William
         </h1>
         <div className="flex justify-center mb-4">
           <span
-            className="text-white text-lg text-center font-medium"
+            className="text-white text-lg md:text-xl lg:text-2xl text-center font-medium"
             ref={el}
           ></span>
         </div>
-        <div className="flex flex-row items-center justify-center gap-4">
+        <div className="flex flex-row items-center justify-center gap-4 md:gap-6 lg:gap-8">
           <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white hover:bg-gray-100 transition-colors text-slate-400 px-5 py-3 rounded-lg font-medium shadow-md"
+            className="bg-white hover:bg-gray-100 transition-colors text-slate-400 px-5 py-3 md:px-6 md:py-4 lg:px-8 lg:py-4 rounded-lg font-medium shadow-md text-sm md:text-base lg:text-lg"
           >
             Resume
           </a>
@@ -58,7 +58,7 @@ export default function Hero() {
             className="hover:opacity-80 transition-opacity"
           >
             <svg
-              className="w-8 h-8 fill-white"
+              className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 fill-white"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -72,7 +72,7 @@ export default function Hero() {
             className="hover:opacity-80 transition-opacity"
           >
             <svg
-              className="w-8 h-8 fill-white"
+              className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 fill-white"
               viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg"
             >
