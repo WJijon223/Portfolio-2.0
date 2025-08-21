@@ -24,7 +24,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="w-full px-4 pb-8 -mt-8 mx-auto min-h-screen flex items-center">
+    <section className="w-full px-4 pb-8 pt-24 mx-auto min-h-screen flex items-center">
       <div className="w-full max-w-md md:max-w-2xl lg:max-w-4xl mx-auto bg-slate-400 rounded-2xl shadow-lg py-36 px-6 md:px-12 lg:px-16 space-y-12">
         <div className="flex justify-center mb-4">
           <img
@@ -47,7 +47,7 @@ export default function Hero() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white hover:bg-gray-100 transition-colors text-slate-400 px-5 py-3 md:px-6 md:py-4 lg:px-8 lg:py-4 rounded-lg font-medium shadow-md text-sm md:text-base lg:text-lg"
+            className="bg-white hover:bg-gray-100 transition-transform duration-200 hover:scale-110 transition-colors text-slate-400 px-5 py-3 md:px-6 md:py-4 lg:px-8 lg:py-4 rounded-lg font-medium shadow-md text-sm md:text-base lg:text-lg"
           >
             Resume
           </a>
@@ -55,7 +55,7 @@ export default function Hero() {
             href="https://github.com/WJijon223"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity transition-transform duration-200 hover:scale-110"
           >
             <svg
               className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 fill-white"
@@ -69,7 +69,7 @@ export default function Hero() {
             href="https://www.linkedin.com/in/william-jijon"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:opacity-80 transition-opacity"
+            className="hover:opacity-80 transition-opacity transition-transform duration-200 hover:scale-110"
           >
             <svg
               className="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 fill-white"

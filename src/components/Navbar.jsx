@@ -9,7 +9,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="bg-white w-[90%] md:w-[70%] lg:w-[55%] min-w-min md:gap-5 rounded-3xl mx-auto flex flex-row justify-center mt-5 gap-3 p-3">
+    <div className="fixed top-5 left-1/2 transform -translate-x-1/2 bg-white w-[90%] md:w-[70%] lg:w-[55%] min-w-min md:gap-5 rounded-3xl flex flex-row justify-center gap-3 p-3 z-50 shadow-lg">
       {headers.map((header, index) => {
         return (
           <div
