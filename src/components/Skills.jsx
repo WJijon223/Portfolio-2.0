@@ -245,7 +245,8 @@ export default function Skills() {
           Tech Stack
         </h2>
 
-        <div className="grid grid-cols-2 gap-6">
+        {/* Mobile layout - 2 columns */}
+        <div className="grid grid-cols-2 gap-6 md:hidden">
           {skills.map((skill, index) => (
             <div
               key={index}
@@ -259,6 +260,43 @@ export default function Skills() {
               </h3>
             </div>
           ))}
+        </div>
+
+        {/* Desktop layout - 2 rows with 5 and 4 items */}
+        <div className="hidden md:block space-y-6">
+          {/* First row - 5 items */}
+          <div className="grid grid-cols-5 gap-6">
+            {skills.slice(0, 5).map((skill, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center justify-center group hover:scale-105 transform transition-transform"
+              >
+                <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {skill.icon}
+                </div>
+                <h3 className="text-lg font-semibold text-gray-700 text-center">
+                  {skill.name}
+                </h3>
+              </div>
+            ))}
+          </div>
+
+          {/* Second row - 4 items centered */}
+          <div className="grid grid-cols-4 gap-6 max-w-4xl mx-auto">
+            {skills.slice(5).map((skill, index) => (
+              <div
+                key={index + 5}
+                className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center justify-center group hover:scale-105 transform transition-transform"
+              >
+                <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {skill.icon}
+                </div>
+                <h3 className="text-lg font-semibold text-gray-700 text-center">
+                  {skill.name}
+                </h3>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
