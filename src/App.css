@@ -8,3 +8,7 @@
   box-sizing: border-box;
   font-family: "Domine", serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}

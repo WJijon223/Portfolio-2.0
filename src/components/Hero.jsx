@@ -24,7 +24,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="w-full px-4 pb-8 pt-24 mx-auto min-h-screen flex items-center">
+    <section
+      id="home"
+      className="w-full px-4 pb-8 pt-24 mx-auto min-h-screen flex items-center"
+    >
       <div className="w-full max-w-md md:max-w-2xl lg:max-w-4xl mx-auto bg-slate-400 rounded-2xl shadow-lg py-36 px-6 md:px-12 lg:px-16 space-y-12">
         <div className="flex justify-center mb-4">
           <img

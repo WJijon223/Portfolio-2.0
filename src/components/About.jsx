@@ -2,7 +2,10 @@ import collageImage from "/images/Collage.jpg";
 
 export default function About() {
   return (
-    <section className="w-full px-4 py-12 mx-auto min-h-screen flex items-center">
+    <section
+      id="about"
+      className="w-full px-4 py-12 mx-auto min-h-screen flex items-center"
+    >
       <div className="max-w-sm mx-auto md:max-w-6xl bg-white rounded-2xl shadow-lg p-8 md:p-12 space-y-6 w-full">
         <header className="text-3xl font-bold text-gray-800 text-center mb-6 md:mb-8">
           About Me

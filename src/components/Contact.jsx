@@ -42,9 +42,9 @@ export default function Contact() {
   };
 
   return (
-    <div
-      className="px-6 md:px-12 lg:px-20 py-16 md:py-20 lg:py-24"
+    <section
       id="contact"
+      className="px-6 md:px-12 lg:px-20 py-16 md:py-20 lg:py-24"
     >
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6 md:mb-8 lg:mb-10 text-white">
         Connect with me!
@@ -118,6 +118,6 @@ export default function Contact() {
           {isLoading ? "Sending..." : "Send Email"}
         </button>
       </form>
-    </div>
+    </section>
   );
 }

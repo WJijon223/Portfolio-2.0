@@ -15,7 +15,10 @@ export default function Experience() {
   ];
 
   return (
-    <section className="w-full px-4 py-12 mx-auto min-h-screen flex items-center">
+    <section
+      id="experience"
+      className="w-full px-4 py-12 mx-auto min-h-screen flex items-center"
+    >
       <div className="max-w-sm mx-auto md:max-w-6xl bg-white rounded-2xl shadow-lg p-8 md:p-12 space-y-6 w-full">
         {/* Section Header */}
         <div className="text-center mb-12">

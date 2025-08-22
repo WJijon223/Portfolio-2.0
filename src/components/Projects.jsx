@@ -71,7 +71,10 @@ export default function Projects() {
     },
   ];
   return (
-    <section className="w-full px-4 py-12 mx-auto min-h-screen flex items-center">
+    <section
+      id="projects"
+      className="w-full px-4 py-12 mx-auto min-h-screen flex items-center"
+    >
       <div className="max-w-sm mx-auto md:max-w-none md:w-full md:px-8 bg-slate-400 rounded-2xl shadow-lg p-8 md:p-12 space-y-6 w-full">
         <h2 className="text-white text-3xl md:text-4xl font-bold text-center mb-8">
           Projects
