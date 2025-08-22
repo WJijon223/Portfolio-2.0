@@ -1,12 +1,32 @@
-# React + Vite
+# 🌐 William Jijon - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio!  
+This site highlights my projects, experience, and skills as a Software Engineer.  
 
-Currently, two official plugins are available:
+🔗 **Live Site:** [williamjijon.com](https://williamjijon.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 About
+This portfolio was built to showcase who I am as a developer and to provide a central place for my projects, resume, and professional links. It is designed with a clean, modern UI to reflect my style and attention to detail.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Tailwind CSS  
+- **Hosting:** Netlify  
+- **Other Tools:** Git, GitHub
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+- Responsive design for desktop and mobile  
+- Project showcase with links to GitHub repositories  
+- Resume and social media integration (LinkedIn, GitHub)  
+- Simple and fast navigation  
+
+## 📂 Projects
+A few highlighted projects included in the portfolio:
+- **IntelliSpeech** – Real-time voice translation platform  
+- **GeoTrend** – Location-based trend explorer  
+- **CookBot** – AI-powered cooking assistant  
+
+## 📬 Contact
+Feel free to connect with me:  
+- [LinkedIn](https://linkedin.com/in/william-jijon)  
+- [GitHub](https://github.com/WJijon223)  
+- [Email](mailto:williamjijon223@gmail.com)
