@@ -29,45 +29,95 @@ export default function Experience() {
         <div className="space-y-6">
           {experiences.map((experience, index) => (
             <div key={index} className="bg-slate-400 rounded-lg p-6 shadow-lg">
-              {/* Company Logo */}
-              {experience.image_path && (
-                <div className="flex justify-center mb-4">
-                  <img
-                    src={experience.image_path}
-                    alt={`${experience.company} logo`}
-                    className="w-16 h-16 object-contain rounded-lg"
-                  />
-                </div>
-              )}
+              {/* Mobile layout - stacked vertically */}
+              <div className="md:hidden">
+                {/* Company Logo */}
+                {experience.image_path && (
+                  <div className="flex justify-center mb-4">
+                    <img
+                      src={experience.image_path}
+                      alt={`${experience.company} logo`}
+                      className="w-16 h-16 object-contain rounded-lg"
+                    />
+                  </div>
+                )}
 
-              {/* Job Title and Company */}
-              <div className="text-center mb-4">
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {experience.name}
-                </h3>
-                <p className="text-slate-100 font-medium mb-1">
-                  {experience.company}
-                </p>
-                <p className="text-slate-200 text-sm mb-1">
-                  {experience.location}
-                </p>
-                <p className="text-slate-200 text-sm font-medium">
-                  {experience.time}
-                </p>
+                {/* Job Title and Company */}
+                <div className="text-center mb-4">
+                  <h3 className="text-xl font-semibold text-white mb-2">
+                    {experience.name}
+                  </h3>
+                  <p className="text-slate-100 font-medium mb-1">
+                    {experience.company}
+                  </p>
+                  <p className="text-slate-200 text-sm mb-1">
+                    {experience.location}
+                  </p>
+                  <p className="text-slate-200 text-sm font-medium">
+                    {experience.time}
+                  </p>
+                </div>
+
+                {/* Description */}
+                <div className="space-y-3">
+                  {experience.description.map((item, idx) => (
+                    <div key={idx} className="flex items-start">
+                      <span className="text-white mr-3 mt-1.5 flex-shrink-0">
+                        •
+                      </span>
+                      <p className="text-slate-100 text-sm leading-relaxed">
+                        {item}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
 
-              {/* Description */}
-              <div className="space-y-3">
-                {experience.description.map((item, idx) => (
-                  <div key={idx} className="flex items-start">
-                    <span className="text-white mr-3 mt-1.5 flex-shrink-0">
-                      •
-                    </span>
-                    <p className="text-slate-100 text-sm leading-relaxed">
-                      {item}
+              {/* Desktop layout - logo left, content right */}
+              <div className="hidden md:flex md:gap-8">
+                {/* Left side - Logo */}
+                {experience.image_path && (
+                  <div className="md:w-1/4 md:flex md:justify-center md:items-center md:min-h-full">
+                    <img
+                      src={experience.image_path}
+                      alt={`${experience.company} logo`}
+                      className="w-48 h-48 object-contain rounded-lg"
+                    />
+                  </div>
+                )}
+
+                {/* Right side - Content */}
+                <div className="md:w-3/4 md:flex md:flex-col md:justify-center">
+                  {/* Job Title and Company */}
+                  <div className="mb-4">
+                    <h3 className="text-2xl font-bold text-white mb-1">
+                      {experience.name}
+                    </h3>
+                    <p className="text-slate-100 font-semibold text-lg mb-1">
+                      {experience.company}
+                    </p>
+                    <p className="text-slate-200 text-base mb-0.5">
+                      {experience.location}
+                    </p>
+                    <p className="text-slate-200 text-base font-medium">
+                      {experience.time}
                     </p>
                   </div>
-                ))}
+
+                  {/* Description */}
+                  <div className="space-y-2">
+                    {experience.description.map((item, idx) => (
+                      <div key={idx} className="flex items-start">
+                        <span className="text-white mr-4 mt-1 flex-shrink-0">
+                          •
+                        </span>
+                        <p className="text-slate-100 text-base leading-relaxed">
+                          {item}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           ))}
