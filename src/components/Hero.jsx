@@ -47,7 +47,7 @@ export default function Hero() {
         </div>
         <div className="flex flex-row items-center justify-center gap-4 md:gap-6 lg:gap-8">
           <a
-            href="/resume.pdf"
+            href="/Jijon__William.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white hover:bg-gray-100 transition-transform duration-200 hover:scale-110 transition-colors text-slate-400 px-5 py-3 md:px-6 md:py-4 lg:px-8 lg:py-4 rounded-lg font-medium shadow-md text-sm md:text-base lg:text-lg"
