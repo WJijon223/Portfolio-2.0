@@ -90,6 +90,36 @@ export default function Skills() {
         />
       ),
     },
+    {
+      name: "Spring",
+      icon: (
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+          alt="Spring"
+          className="w-12 h-12"
+        />
+      ),
+    },
+    {
+      name: "Azure",
+      icon: (
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"
+          alt="Azure"
+          className="w-12 h-12"
+        />
+      ),
+    },
+    {
+      name: "Node.js",
+      icon: (
+        <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+          alt="Node.js"
+          className="w-12 h-12"
+        />
+      ),
+    },
   ];
 
   return (
@@ -119,30 +149,12 @@ export default function Skills() {
           ))}
         </div>
 
-        {/* Desktop layout - 2 rows with 5 and 4 items */}
-        <div className="hidden md:block space-y-6">
-          {/* First row - 5 items */}
-          <div className="grid grid-cols-5 gap-6">
-            {skills.slice(0, 5).map((skill, index) => (
+        {/* Desktop layout - single 4-column grid (md+) -> will form 3 rows of 4 with 12 skills) */}
+        <div className="hidden md:block">
+          <div className="grid grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {skills.map((skill, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center justify-center group hover:scale-105 transform transition-transform"
-              >
-                <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {skill.icon}
-                </div>
-                <h3 className="text-lg font-semibold text-gray-700 text-center">
-                  {skill.name}
-                </h3>
-              </div>
-            ))}
-          </div>
-
-          {/* Second row - 4 items centered */}
-          <div className="grid grid-cols-4 gap-6 max-w-4xl mx-auto">
-            {skills.slice(5).map((skill, index) => (
-              <div
-                key={index + 5}
                 className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 flex flex-col items-center justify-center group hover:scale-105 transform transition-transform"
               >
                 <div className="mb-4 group-hover:scale-110 transition-transform duration-300">

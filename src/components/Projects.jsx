@@ -41,7 +41,15 @@ export default function Projects() {
       link: "https://github.com/WJijon223/cookbot",
       imagePath: "/images/projects/cookbot.PNG",
     },
-
+    {
+      name: "FinTrack",
+      techStack: ["Java", "Spring Boot", "JavaFX", "CSS", "MySQL"],
+      description:
+        "Full-stack personal finance app that helps users manage budgets, track expenses, and set savings goals. Built with Spring Boot, JavaFX, and Azure MySQL for secure, cloud-based data management and seamless backend integration.",
+      time: "May 2025",
+      link: "https://github.com/WJijon223/FinTrack",
+      imagePath: "/images/projects/fintrack.png",
+    },
     {
       name: "Juicy Bytes",
       techStack: ["React", "Tailwind CSS", "FruityVice API"],
