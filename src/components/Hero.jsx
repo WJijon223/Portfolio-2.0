@@ -41,7 +41,7 @@ export default function Hero() {
         </h1>
         <div className="flex justify-center mb-4">
           <span
-            className="text-white text-lg md:text-xl lg:text-2xl text-center font-medium"
+            className="text-white text-lg md:text-xl lg:text-2xl text-center font-medium inline-block h-6 md:h-8 lg:h-10 leading-tight"
             ref={el}
           ></span>
         </div>
