@@ -1,6 +1,14 @@
 export default function Experience() {
   const experiences = [
     {
+      name: "Quantitative Investment Science Intern",
+      company: "HarbourVest",
+      location: "Boston, MA",
+      time: "Summer 2026",
+      description: ["Incoming Summer 2026"],
+      image_path: "/images/harbourvest_logo.jpg",
+    },
+    {
       name: "Tech Developer Intern",
       company: "SEO (Sponsors for Educational Opportunity)",
       location: "Remote",
